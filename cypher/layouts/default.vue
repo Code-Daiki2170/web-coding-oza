@@ -9,7 +9,7 @@
 
 <script>
 import { Header } from '../components/organisms/Header'
-import { DefaultInput } from '../components/organisms/ContactInput'
+import { DefaultInput } from '../components/organisms/DefaultInput'
 export default {
 	components: { Header, DefaultInput },
 }

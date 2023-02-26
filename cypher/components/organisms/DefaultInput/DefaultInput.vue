@@ -1,5 +1,5 @@
 <template>
-	<div><input type="text" v-model="inputData" /></div>
+	<input class="input" :type="props.type.Number" v-model="inputData" />
 </template>
 
 <script>
@@ -9,12 +9,10 @@ import { onMounted } from 'vue'
 export default {
 	name: 'DefaultInput',
 	props: {
-		text: {
+		input: {
 			type: String | Number,
-			required: true,
 		},
 	},
-
 	setup() {
 		const inputData = ref('')
 		return { inputData }
@@ -22,4 +20,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+input {
+	width: 100%;
+	border: solid 1px gray;
+	background-color: #fff;
+}
+</style>
