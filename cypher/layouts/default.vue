@@ -1,19 +1,22 @@
 <template>
-  <div class="l-wrapper">
-    <Header></Header>
-    <NuxtPage />
-  </div>
+	<div class="l-wrapper">
+		<DefaultInput></DefaultInput>
+		<!-- <Header></Header>
+
+		<NuxtPage /> -->
+	</div>
 </template>
 
 <script>
-import { Header } from "../components/organisms/Header";
+import { Header } from '../components/organisms/Header'
+import { DefaultInput } from '../components/organisms/ContactInput'
 export default {
-  components: { Header },
-};
+	components: { Header, DefaultInput },
+}
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 .l-wrapper {
-  background-color: #eee;
+	background-color: #eee;
 }
 </style>
